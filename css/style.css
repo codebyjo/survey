@@ -207,8 +207,10 @@ input::-moz-focus-inner {
 /* CUSTOM CODE */
 
 .container {
- display: grid;
- background-color: magenta;
+  padding: 50px;
+  width: 450px;
+  border: 1px solid #000;
+  margin: 60px auto;
  
 }
 
@@ -216,4 +218,16 @@ input::-moz-focus-inner {
  display: grid;
  grid-template-columns: 150px 150px 150px 150px;
  
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.left {
+	color: red;
+}
+
+.right {
+	color: green;
 }
