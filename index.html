@@ -38,119 +38,145 @@
   <!--Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.-->
  <div class="container">
   <header>
-    <h1 id="title">Responsive Web Design Projects - Build a Survey Form</h1>
+    <h1 id="title">Responsive Web Design Projects - Build a Survey Form test test test</h1>
   </header>
   
-  <section id="formContainer">
-    <p class="description">Thank you for patronage, we would love to hear about you and your experience! Please take this survey to provide feedback on our services so we can improve them in the future.</p>
+  <main>
+    <section id="formContainer">
+      <p class="description">Thank you for patronage, we would love to hear about you and your experience! Please take this survey to provide feedback on our services so we can improve them in the future.</p>
 
-    <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
-    <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
-    <form id="surveyForm" method="POST" action="">
-
-      
-
-        <fieldset class="grouping">
-
-                    <label class="left">Name (Required): </label>
-                    <input class="right" type="text" name="name" id="name" placeholder="Your Name" required>
-
-                    <br><label class="left">Email (Required): </label>
-                    <input class="right" type="email" name="email" id="email" placeholder="Your Email" required>
-
-                    <br>
-                    <label class="left">Phone: </label>
-                    <input class="right" type="tel" name="phone" id="phone" placeholder="Your Phone">
-          </fieldset><!--class="grouping">
+      <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
+      <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
+      <form id="surveyForm" method="POST" action="">
 
 
-          
-        <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+         <div class="col-lg-12 col-xl-10">
+                        <div class="form-group">
+                            <label for="name" class="">Name (Required): </label>
+                            <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="">Email (Required): </label>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                             <label class="left">Phone: </label>
+                              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+                        </div>
+  
         
+          <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+                 
+                        
+                     <div class="form-group">
+                          <label for="howDidYouHearAboutUs">How Did You Hear About Us?</label>
+                          <select class="form-control" name="howDidYouHearAboutUs" id="howDidYouHearAboutUs">
+                              <option disabled selected value="select">Select an Option</option>
+                              <option value="searchEngine">Search Engine</option>
+                              <option value="wordOfMouth">Word Of Mouth</option>
+                              <option value="flyers">Flyers</option>
+                              <option value="socialMedia">Social Media</option>
+                              <option value="referral">Referral</option>
+                              <option value="onlineAd">Online Ads</option>
+                          </select>
+                        </div>
+
+                    <div class="form-group">
+                      <div class="form-check">
+                        <label for="servicesRendered">Services Rendered</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="webDesign" id="webDesign">
+                                <label class="form-check-label" for="webDesign">Web Design</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="SEO" id="SEO" >
+                                <label class="form-check-label" for="SEO">SEO</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="websiteRepair" id="websiteRepair" >
+                                <label class="form-check-label" for="websiteRepair">Website Repair</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="backendProjects" id="backendProjects" >
+                                <label class="form-check-label" for="backendProjects">Back End Projects</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="dataVisualization" id="dataVisualization" >
+                                <label class="form-check-label" for="dataVisualization">Data Visualization</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="dataVisualization" id="dataVisualization" >
+                                <label class="form-check-label" for="dataVisualization">Data Visualization</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <div class="form-group">
+                          <label for="howWouldYouRateUs">How Would You Rate Us?</label>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" id="ratingOne" value="ratingOne">
+                                  <label class="form-check-label" for="ratingOne">😠</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" id="ratingTwo" value="ratingTwo">
+                                  <label class="form-check-label" for="ratingTwo">😟</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" id="ratingThree" value="ratingThree">
+                                  <label class="form-check-label" for="ratingThree">😐</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" id="ratingFour" value="ratingFour">
+                                  <label class="form-check-label" for="ratingFour">🙂</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" id="ratingFive" value="ratingFive">
+                                  <label class="form-check-label" for="ratingFive">😃</label>
+                                </div>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="additionalFeedback">Additional Feedback</label>
+                        <textarea name="additionalFeedback" id="additionalFeedback" class="form-control text-justify"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div><!-- class="col-lg-12 col-xl-10"-->
+
+            </form>
+
         
-        <fieldset class="grouping">
-                <p class="description left">How did you hear about us?</p>
-              <select class="right">
-                <option>Search Engine</option>
-                <option>Word Of Mouth</option>
-                <option>Flyers</option>
-                <option>Social Media</option>
-                <option>Referral</option>
-                <option>Online Ads</option>
-              </select>
-        </fieldset>
+        <!--User Story #7: Inside the form, I can enter a number in a field with id="number".-->
+        <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+        <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
 
-        <fieldset class="grouping">
-        
-            <p class="description left">Services Rendered</p>
-            <input type="checkbox" /><class="right">Web Design
-            <input type="checkbox" /><class="right">SEO
-            <input type="checkbox" /><class="right">Website Repair
-            
-        </fieldset>
+        <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
+        <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+
+        <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
+
+    <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+    <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+    <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+
+    <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
+
+            </section>
+        </main>
 
 
-      
-      <!--User Story #7: Inside the form, I can enter a number in a field with id="number".-->
-      <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
-      <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
+ 
+  <!--container-->
 
-      <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
-      <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
-
-      <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
-
-  <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
-  <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
-  <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
-
-  <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
-
-
-    <fieldset class="grouping">
-
-
-     <p class="description left">Rating</p>
-     <div class="grid-container">
-
-              <div class="grid-item">😃<input type="radio"></div>
-              <div class="grid-item">🙂<input type="radio"></div>
-              <div class="grid-item">😐<input type="radio"></div>
-              <div class="grid-item">😟<input type="radio"></div>
-              <div class="grid-item">😠<input type="radio"></div>
-
-    </div>
-
-    </fieldset>
-
-   <fieldset class="grouping">
-        
-          <p class="description left">Additional Feedback:</p>
-          <textarea name="message"></textarea>
-
-
-    </fieldset>
-
-
-  <input type="submit" value="Submit">
-
-    </section>
-
-</div>
-
-
-</form>
-
-  <footer>
-    <div>
+    <footer>
+    <div class="text-center">
       <p>
         Made by: <a href="https://www.freecodecamp.com/eagarcia8">Eduardo Garcia</a> &amp; <a href="https://www.freecodecamp.com/codebyjo">Joanne Dang</a>
       </p>
     </div>
   </footer>
-
-  </div>
-  <!--container-->
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
