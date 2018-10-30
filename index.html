@@ -36,7 +36,9 @@
 
 <body>
   <!--Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.-->
- <div id="madeUpContainer" class="container col-md-4 centered col-md-offset-4 col-xs-12 containBorder">
+ <div id="container">
+   <form class="form-signin">
+
   <header>
     <h1 id="title">Responsive Web Design Projects - Build a Survey Form</h1>
   </header>
@@ -114,26 +116,28 @@
 
                      <div class="form-group">
                           <label for="howWouldYouRateUs">How Would You Rate Us?</label>
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" id="ratingOne" value="ratingOne">
+              
+                                  <div class="form-check form-check-inline">
+                                  <input name="rate" class="form-check-input" type="radio" id="ratingOne" value="ratingOne">
                                   <label class="form-check-label" for="ratingOne">😠</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" id="ratingTwo" value="ratingTwo">
+                                  <input name="rate" class="form-check-input" type="radio" id="ratingTwo" value="ratingTwo">
                                   <label class="form-check-label" for="ratingTwo">😟</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" id="ratingThree" value="ratingThree">
+                                  <input name="rate" class="form-check-input" type="radio" id="ratingThree" value="ratingThree">
                                   <label class="form-check-label" for="ratingThree">😐</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" id="ratingFour" value="ratingFour">
+                                  <input name="rate" class="form-check-input" type="radio" id="ratingFour" value="ratingFour">
                                   <label class="form-check-label" for="ratingFour">🙂</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" id="ratingFive" value="ratingFive">
+                                  <input name="rate" class="form-check-input" type="radio" id="ratingFive" value="ratingFive">
                                   <label class="form-check-label" for="ratingFive">😃</label>
                                 </div>
+              
                      </div>
 
                      <div class="form-group">
@@ -146,6 +150,8 @@
                 </div><!-- class="col-lg-12 col-xl-10"-->
 
             </form>
+            
+            </div>
 
         
         <!--User Story #7: Inside the form, I can enter a number in a field with id="number".-->
