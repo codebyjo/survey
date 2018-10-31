@@ -48,10 +48,9 @@
 
       <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
       <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
-      <form >
 
 
-         <div class="">
+
                         <div class="form-group">
                             <label for="name" class="">Name (Required): </label>
                             <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
@@ -115,9 +114,7 @@
 
                      <div class="form-group">
                           <label for="howWouldYouRateUs">How Would You Rate Us?</label>
-                            
                               <div class="row-fluid">
-                                
                                 <div class="container">
                                         <div class="row" style="border: 1px solid red">
                                             <div class="col-xs-2 form-check form-check-inline">
@@ -143,7 +140,6 @@
                                                     <label class="form-check-label" for="ratingFour">
                                                       <div class="face">🙂</div>
                                                     </label>
-
                                              </div>
                                             <div class="col-xs-2 col-half-offset form-check form-check-inline">
                                               <input name="rate" class="form-check-input" type="radio" id="ratingFive" value="ratingFive">
@@ -153,26 +149,25 @@
                                             </div>
                                         </div><!--row-->
                                     </div><!--container-->
-     
-
-                            </div><!--row fluid-->
-              
+                                 </div><!--row fluid-->
                      </div><!--form group-->
 
                      <div class="form-group">
-                        <label for="additionalFeedback">Additional Feedback</label>
-                        <textarea name="additionalFeedback" id="additionalFeedback" class="form-control text-justify"></textarea>
+                        <label for="additionalFeedback" placeholder="Your Name" >Additional Feedback</label>
+                        <textarea name="additionalFeedback" id="additionalFeedback" class="form-control text-justify">
+                          
+                        </textarea>
                     </div>
+                    
+                     <div class="form-group">
+                            <label for="additionalFeedback" placeholder="Your Comments Here">Additional Feedback</label>
+                             <textarea type="text" name="additionalFeedbak" id="additionalFeedback" class="form-control" rows="5" placeholder="Your Comments Here"></textarea>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
-
-                </div><!-- class="col-lg-12 col-xl-10"-->
-
-            </form>
-            
+                    
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
 
 
-        
         <!--User Story #7: Inside the form, I can enter a number in a field with id="number".-->
         <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
         <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
@@ -191,10 +186,9 @@
             </section>
         </main>
         
+  </form>
+        
 
-
- 
-  <!--container-->
 
     <footer>
     <div class="col-xl-12 text-center">
